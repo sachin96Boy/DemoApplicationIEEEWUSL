@@ -34,7 +34,7 @@ DemoApp requires [Node.js](https://nodejs.org/) v10+ and [GitBash](https://git-s
 Clone the application from github and Install dependancies to run.
 
 ```sh
-git clone ssh://john@example.com/path/to/my-project.git 
+git clone https://github.com/sachin96Boy/DemoApplicationIEEEWUSL.git 
 cd my-project 
 ```
 

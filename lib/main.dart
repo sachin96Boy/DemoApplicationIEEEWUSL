@@ -7,12 +7,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.blueGrey),
       home: Scaffold(
         appBar: AppBar(
           title: Text('MyTestApplication'),
         ),
-        body: SingleChildScrollView(
-          child: ProductManager(),
+        body: Center(
+          child: SingleChildScrollView(
+            child: ProductManager('MyInitialProduct'),
+          ),
         ),
       ),
     );

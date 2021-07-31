@@ -1,29 +1,43 @@
 import 'package:flutter/material.dart';
-import 'package:my_tutorial_app/products.dart';
+
+
+import '../widgets/product_control.dart';
+import 'products.dart';
 
 class ProductManager extends StatefulWidget {
-  const ProductManager({Key? key}) : super(key: key);
+  final String startingProduct;
+  ProductManager(this.startingProduct);
 
   @override
   _ProductManagerState createState() => _ProductManagerState();
 }
 
 class _ProductManagerState extends State<ProductManager> {
-  List<String> _products = ['first product', 'seond product'];
+  List<String> _products = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    _products.add(widget.startingProduct);
+    super.initState();
+  }
+
+  void _addProduct(String product) {
+    setState(() {
+      _products.add(product);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(10.0),
-      child: ElevatedButton(
-        child: Text('Add Products'),
-        onPressed: () {
-          setState(() {
-            _products.add('new-value');
-          });
-          Products(_products);
-        },
-      ),
+    return Column(
+      children: [
+        Container(
+          margin: EdgeInsets.all(10.0),
+          child: ProductControl(_addProduct),
+        ),
+        Products(_products),
+      ],
     );
   }
 }

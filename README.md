@@ -1,16 +1,48 @@
-# my_tutorial_app
+# DemoApplication
+## _FLUTTER:101 TECHNICAL WEBINER_
 
-A new Flutter project.
+[![N|Solid](https://i.ibb.co/4JYCmMH/ion-sb.png)]https://www.facebook.com/ieeewusl/)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+This is a Demo Application build for the technical webiner on Flutter organized by IEEE Student Branch of Wayamba Universiyt Of Sri Lanka.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Concepts covered
+
+- Flutter and Dart Installation Process
+- Flutter Main Application creation from Scratch
+- Understanding about the widgetTree
+- Stateless and Statefull widgets
+- Divide the application to components and pass data accordingly
+
+
+## Tech
+
+Dillinger uses a number of open source projects to work properly:
+
+- [Flutter] - Framework for creatingthe application
+- [Dart] - Programming Language used
+- [Visual Studio Code] - Code Editor used for the Project.
+
+
+
+## Installation
+
+DemoApp requires [Node.js](https://nodejs.org/) v10+ and [GitBash](https://git-scm.com/) to run.
+
+Clone the application from github and Install dependancies to run.
+
+```sh
+git clone ssh://john@example.com/path/to/my-project.git 
+cd my-project 
+```
+
+Install the Missing dependancies and run the application
+
+```sh
+flutter pub get
+
+flutter run my-app
+```
+

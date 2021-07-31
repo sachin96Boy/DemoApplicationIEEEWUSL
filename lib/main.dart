@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:my_tutorial_app/product_manager.dart';
 
-main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  build(context) {
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text('MyTestApplication'),
+        ),
+        body: SingleChildScrollView(
+          child: ProductManager(),
         ),
       ),
     );

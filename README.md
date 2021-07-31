@@ -19,7 +19,7 @@ This is a Demo Application build for the technical webiner on Flutter organized 
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
+Flutter app uses a number of open source projects to work properly:
 
 - [Flutter] - Framework for creatingthe application
 - [Dart] - Programming Language used

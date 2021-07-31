@@ -35,7 +35,7 @@ Clone the application from github and Install dependancies to run.
 
 ```sh
 git clone https://github.com/sachin96Boy/DemoApplicationIEEEWUSL.git 
-cd my-project 
+cd DemoApplicationIEEEWUSL 
 ```
 
 Install the Missing dependancies and run the application
@@ -43,6 +43,6 @@ Install the Missing dependancies and run the application
 ```sh
 flutter pub get
 
-flutter run my-app
+flutter run 
 ```
 
